@@ -16,6 +16,7 @@ Astra Trident folgt einem vierteljährlichen Release-Intervall mit vier Hauptver
 
 
 
+[[considerations-before-upgrading]]
 == Überlegungen vor dem Upgrade
 
 Bei einem Upgrade auf die neueste Version von Astra Trident sollten Sie Folgendes berücksichtigen:
@@ -34,12 +35,13 @@ Bei einem Upgrade auf die neueste Version von Astra Trident sollten Sie Folgende
 
 
 
+[[step-1-select-a-version]]
 == Schritt 1: Wählen Sie eine Version
 
 Astra Trident Versionen folgen einem datumbasierten `YY.MM` Namensgebungskonvention, wobei „YY“ die letzten beiden Ziffern des Jahres und „MM“ der Monat ist. Dot Releases folgen einem `YY.MM.X` konvention, wo "X" die Patch-Ebene ist. Sie wählen die Version, auf die Sie aktualisieren möchten, basierend auf der Version aus, von der Sie aktualisieren.
 
 * Sie können ein direktes Upgrade auf jede Zielversion durchführen, die sich innerhalb eines Fensters mit vier Versionen Ihrer installierten Version befindet. Sie können beispielsweise direkt von 22.07 (oder einem beliebigen 22.07-Punkt-Release) auf 23.07 aktualisieren.
-* Wenn Sie ein Upgrade von einer Version außerhalb des Fensters mit vier Releases durchführen, führen Sie ein Upgrade in mehreren Schritten durch. Befolgen Sie die Upgrade-Anweisungen für link:../earlier-versions.html["Frühere Version"] Sie führen ein Upgrade von auf die neueste Version durch, die für das Fenster mit vier Versionen geeignet ist. Wenn Sie beispielsweise 21.07 verwenden und ein Upgrade auf 23.07 durchführen möchten:
+* Wenn Sie von einer Version außerhalb des Vier-Versions-Fensters aktualisieren, ist ein mehrstufiges Upgrade erforderlich. Die Upgrade-Anweisungen für die frühere Version sind zu verwenden, um auf die neueste Version innerhalb des Vier-Versions-Fensters zu aktualisieren. Beispiel: Wenn Sie Version 21.07 verwenden und auf 23.07 aktualisieren möchten:
 +
 .. Erstes Upgrade von 21.07 auf 22.07.
 .. Dann Upgrade von 22.07 auf 23.07.
@@ -52,6 +54,7 @@ NOTE: Wenn Sie ein Upgrade über den Trident-Operator auf der OpenShift Containe
 
 
 
+[[step-2-determine-the-original-installation-method]]
 == Schritt 2: Bestimmen Sie die ursprüngliche Installationsmethode
 
 So ermitteln Sie, welche Version Sie ursprünglich für Astra Trident verwendet haben:
@@ -72,9 +75,10 @@ So ermitteln Sie, welche Version Sie ursprünglich für Astra Trident verwendet 
 
 
 
+[[step-3-select-an-upgrade-method]]
 == Schritt 3: Wählen Sie eine Upgrade-Methode
 
-Im Allgemeinen sollten Sie das Upgrade mit der gleichen Methode durchführen, die Sie für die Erstinstallation verwendet haben, wie Sie es können link:../trident-get-started/kubernetes-deploy.html#moving-between-installation-methods["Wechseln Sie zwischen den Installationsmethoden"]. Astra Trident bietet zwei Optionen für ein Upgrade.
+Im Allgemeinen sollte für das Upgrade dieselbe Methode verwendet werden wie für die Erstinstallation, jedoch kann link:../trident-install/kubernetes-deploy.html#moving-between-installation-methods["Wechseln Sie zwischen den Installationsmethoden"]. Es gibt zwei Optionen, um Astra Trident zu aktualisieren.
 
 * link:upgrade-operator.html["Upgrade über den Trident-Operator"]
 +

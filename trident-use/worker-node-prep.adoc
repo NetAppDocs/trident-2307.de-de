@@ -16,6 +16,7 @@ Alle Worker-Nodes im Kubernetes-Cluster müssen in der Lage sein, die Volumes, d
 
 
 
+[[selecting-the-right-tools]]
 == Auswahl der richtigen Werkzeuge
 
 Wenn Sie eine Kombination von Treibern verwenden, sollten Sie NFS- und iSCSI-Tools installieren.
@@ -31,6 +32,7 @@ NOTE: In aktuellen Versionen von RedHat CoreOS sind standardmäßig NFS und iSCS
 
 
 
+[[node-service-discovery]]
 == Ermittlung des Node-Service
 
 Astra Trident versucht automatisch zu erkennen, ob der Node iSCSI- oder NFS-Services ausführen kann.
@@ -54,6 +56,7 @@ tridentctl get node -o wide -n <Trident namespace>
 ----
 
 
+[[nfs-volumes]]
 == NFS Volumes
 
 Installieren Sie die NFS-Tools unter Verwendung der Befehle für Ihr Betriebssystem. Stellen Sie sicher, dass der NFS-Dienst während des Bootens gestartet wird.
@@ -80,12 +83,14 @@ WARNING: Starten Sie die Worker-Nodes nach der Installation der NFS-Tools neu, u
 
 
 
+[[iscsi-volumes]]
 == ISCSI-Volumes
 
 Astra Trident kann automatisch eine iSCSI-Sitzung einrichten, LUNs scannen und Multipath-Geräte erkennen, sie formatieren und auf einem Pod mounten.
 
 
 
+[[iscsi-self-healing-capabilities]]
 === ISCSI-Funktionen zur Selbstreparatur
 
 Bei ONTAP Systemen führt Astra Trident alle fünf Minuten iSCSI-Selbstheilung aus und bietet folgende Vorteile:
@@ -111,6 +116,7 @@ NOTE: Wenn beispielsweise CHAP-Schlüssel auf dem Speicher-Controller gedreht wu
 
 
 
+[[install-the-iscsi-tools]]
 === Installieren Sie die iSCSI-Tools
 
 Installieren Sie die iSCSI-Tools mit den Befehlen für Ihr Betriebssystem.

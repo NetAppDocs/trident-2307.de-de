@@ -16,6 +16,7 @@ Bevor Sie Astra Trident implementieren können, müssen Sie die erforderlichen P
 
 
 
+[[verify-the-requirements]]
 == Überprüfen Sie die Anforderungen
 
 * Stellen Sie sicher, dass Ihre Implementierung alle Anforderungen erfüllt link:../trident-get-started/requirements.html["Anforderungen"].

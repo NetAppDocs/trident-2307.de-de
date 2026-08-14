@@ -16,6 +16,7 @@ Der https://github.com/NetApp/trident/releases["Trident Installationspaket"^] En
 
 
 
+[[available-commands-and-options]]
 == Verfügbare Befehle und Optionen
 
 Führen Sie zur Verwendung Informationen aus `tridentctl --help`.
@@ -62,6 +63,7 @@ CAUTION: Die Trident REST-Schnittstelle kann nur für die Wiedergabe unter 127.0
 
 
 
+[[create]]
 == `create`
 
 Sie können den ausführen `create` Befehl zum Hinzufügen einer Ressource zum Astra Trident.
@@ -76,6 +78,7 @@ Verfügbare Option:
 
 
 
+[[delete]]
 == `delete`
 
 Sie können die ausführen `delete` Befehl, um eine oder mehrere Ressourcen aus Astra Trident zu entfernen.
@@ -95,6 +98,7 @@ Verfügbare Optionen:
 
 
 
+[[get]]
 == `get`
 
 Sie können die ausführen `get` Befehl: Sie erhalten eine oder mehrere Ressourcen von Astra Trident.
@@ -119,6 +123,7 @@ Verfügbare Optionen:
 
 
 
+[[images]]
 == `images`
 
 Sie können die ausführen `images` Flagge, um eine Tabelle der Container-Bilder zu drucken, die Astra Trident benötigt.
@@ -134,6 +139,7 @@ Markierungen:
 
 
 
+[[import-volume]]
 == `import volume`
 
 Sie können die ausführen `import volume` Befehl zum Importieren eines vorhandenen Volumes zu Astra Trident
@@ -155,6 +161,7 @@ Markierungen:
 
 
 
+[[install]]
 == `install`
 
 Sie können die ausführen `install` Flags für die Installation von Astra Trident.
@@ -187,6 +194,7 @@ Markierungen:
 
 
 
+[[logs]]
 == `logs`
 
 Sie können die ausführen `logs` Flags zum Drucken der Protokolle von Astra Trident.
@@ -208,6 +216,7 @@ Markierungen:
 
 
 
+[[send]]
 == `send`
 
 Sie können die ausführen `send` Befehl zum Senden einer Ressource vom Astra Trident.
@@ -222,6 +231,7 @@ Verfügbare Option:
 
 
 
+[[uninstall]]
 == `uninstall`
 
 Sie können die ausführen `uninstall` Flags zum Deinstallieren von Astra Trident.
@@ -237,6 +247,7 @@ Markierungen:
 
 
 
+[[update]]
 == `update`
 
 Sie können die ausführen `update` Befehle zum Ändern einer Ressource in Astra Trident.
@@ -251,6 +262,7 @@ Verfügbare Optionen:
 
 
 
+[[version]]
 == `version`
 
 Sie können die ausführen `version` Flags zum Drucken der Version von `tridentctl` Und den Running Trident Service.

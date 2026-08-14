@@ -16,6 +16,7 @@ Verwenden Sie die hier angegebenen Hinweise zur Fehlerbehebung bei Problemen, di
 
 
 
+[[general-troubleshooting]]
 == Allgemeine Fehlerbehebung
 
 * Falls der Trident Pod nicht richtig angezeigt wird (z. B. wenn er im nicht mehr ordnungsgemäß funktioniert `ContainerCreating` Phase mit weniger als zwei einsatzbereiten Containern), Laufen `kubectl -n trident describe deployment trident` Und `kubectl -n trident describe pod trident-********-****` Dieser Service ermöglicht Ihnen Einblick. Abrufen von Kubelet-Protokollen (z. B. über) `journalctl -xeu kubelet`) Kann auch hilfreich sein.
@@ -68,6 +69,7 @@ Mit tridentctl installiert::
 
 
 
+[[troubleshooting-an-unsuccessful-trident-deployment-using-the-operator]]
 == Fehlerbehebung bei einer nicht erfolgreichen Trident-Implementierung mithilfe des Betreibers
 
 Wenn Sie Trident über den Operator implementieren, lautet der Status von `TridentOrchestrator` Änderungen von `Installing` Bis `Installed`. Wenn Sie die beobachten `Failed` Der Status, und der Operator kann sich nicht selbst wiederherstellen. Sie sollten die Protokolle des Operators überprüfen, indem Sie folgenden Befehl ausführen:
@@ -143,6 +145,7 @@ Eine mit der geänderten und genauen Definition.
 
 
 
+[[troubleshooting-an-unsuccessful-trident-deployment-using-tridentctl]]
 == Fehlerbehebung bei einer nicht erfolgreichen Trident-Implementierung mit `tridentctl`
 
 Um herauszufinden, was schief gelaufen ist, können Sie den Installer mit dem erneut ausführen ``-d`` Argument, das den Debug-Modus aktiviert und Ihnen hilft zu verstehen, was das Problem ist:
@@ -165,6 +168,7 @@ INFO Trident uninstallation succeeded.
 ----
 
 
+[[completely-remove-astra-trident-and-crds]]
 == Entfernen Sie Astra Trident und CRDs vollständig
 
 Sie können Astra Trident und alle erstellten CRDs und zugehörigen benutzerdefinierten Ressourcen vollständig entfernen.
